@@ -1,0 +1,22 @@
+{
+  "name": "interactive-rating-component-main",
+  "version": "1.0.0",
+  "description": "interactive rating component",
+  "main": "script.js",
+  "scripts": {
+    "compile-sass": "node-sass sass/style.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abitsalihu/rating-component.git"
+  },
+  "author": "abi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abitsalihu/rating-component/issues"
+  },
+  "homepage": "https://github.com/abitsalihu/rating-component#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
