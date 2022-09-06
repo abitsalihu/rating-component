@@ -28,7 +28,7 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: $very-dark-blue;
+  background-color: $dark-blue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,6 +45,7 @@ body {
   padding: 30px;
   display: flex;
   align-items: center;
+  box-shadow: 24px 24px 55px #1e252c, -24px -24px 55px #28313c;
 
   &__rating {
     width: 100%;
@@ -93,6 +94,8 @@ body {
 
         background-color: hsl(214, 14%, 23%);
         color: $medium-grey;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+          rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
         &:hover {
           background-color: hsl(211, 11%, 41%);
