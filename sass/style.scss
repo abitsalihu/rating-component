@@ -164,3 +164,49 @@ body {
 .hidden {
   display: none;
 }
+
+@media screen and(max-width:471px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and(max-width:391px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and(max-width:280px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &__rating {
+      &--logo {
+        width: 4rem;
+        height: 4rem;
+
+        & > img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      &--content {
+        & > p {
+          font-size: 1.2rem;
+        }
+      }
+      &--buttons {
+        &-btn {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+    }
+  }
+}
