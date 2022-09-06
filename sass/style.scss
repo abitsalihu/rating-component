@@ -1,9 +1,14 @@
 //! Colors
+//? primary
+
+$orange: hsl(25, 97%, 53%);
+
+//? NEUTRAl
 
 $white: hsl(0, 0%, 100%);
 $light-grey: hsl(217, 12%, 63%);
 $medium-grey: hsl(216, 12%, 54%);
-$dark-blue: hsl(213, 19%, 18%);
+$dark-blue: hsl(212, 20%, 17%);
 $very-dark-blue: hsl(216, 12%, 8%);
 
 //! starting files
@@ -27,21 +32,100 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Overpass", sans-serif;
-  line-height: 15px;
+  line-height: 25px;
   color: $white;
 }
 
 .rating {
-  width: 325px;
-  height: 325px;
+  width: 35rem;
+  height: 35rem;
   background-color: $dark-blue;
   border-radius: 25px;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  // border: 1px solid red;
 
   &__logo {
-    border: 1px solid red;
+    // border: 1px solid red;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    background-color: hsl(214, 14%, 23%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  &__content {
+    // border: 1px solid red;
+    height: 11.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & > h2 {
+      // border: 1px solid green;
+      font-size: 3rem;
+      font-weight: 600;
+      margin: 0;
+    }
+    & > p {
+      // border: 1px solid yellow;
+      font-size: 1.5rem;
+      color: $light-grey;
+      margin: 0;
+    }
+  }
+
+  &__buttons {
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-btn {
+      border: none;
+      border-style: none;
+      width: 5.25rem;
+      height: 5.25rem;
+      border-radius: 100%;
+      font-size: 1.5rem;
+      cursor: pointer;
+
+      background-color: hsl(214, 14%, 23%);
+      color: $medium-grey;
+
+      &:hover {
+        background-color: hsl(211, 11%, 41%);
+        color: $white;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+
+  &__submit {
+    border: none;
+    border-style: none;
+    background-color: $orange;
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 15px 0px;
+    border-radius: 30px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $white;
+      color: $orange;
+      transition: all 0.2s ease;
+    }
+  }
+}
+
+.active {
+  background-color: $orange !important;
+  color: $white !important;
 }
